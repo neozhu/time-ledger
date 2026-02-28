@@ -9,4 +9,10 @@ services:
     environment:
       NODE_ENV: production
       NEXT_PUBLIC_SITE_URL: https://timeledger.blazorserver.com
+    networks:
+      - shared_bridge
     restart: unless-stopped
+
+networks:
+  shared_bridge:
+    external: true
