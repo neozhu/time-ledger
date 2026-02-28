@@ -40,9 +40,79 @@
   animation: enter 240ms ease-out both;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0) scale(0.985);
+  filter: blur(4px);
+  transition:
+    opacity 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform, filter;
+}
+
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.reveal-item {
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+  transition:
+    opacity 480ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 480ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--item-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal[data-visible="true"] .reveal-item {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.reveal-delay-1 {
+  --item-delay: 70ms;
+}
+
+.reveal-delay-2 {
+  --item-delay: 130ms;
+}
+
+.reveal-delay-3 {
+  --item-delay: 190ms;
+}
+
+.reveal-delay-4 {
+  --item-delay: 250ms;
+}
+
+.reveal-delay-5 {
+  --item-delay: 310ms;
+}
+
+.reveal-delay-6 {
+  --item-delay: 370ms;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-enter {
     animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+  .reveal-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
 

@@ -29,7 +29,15 @@ export function WorkflowSection({
         <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-label={title}>
           {steps.map((step, index) => (
             <li
-              className="relative rounded-md border border-slate-200 bg-white p-5"
+              className={`reveal-item relative rounded-md border border-slate-200 bg-white p-5 ${
+                index === 0
+                  ? "reveal-delay-3"
+                  : index === 1
+                    ? "reveal-delay-4"
+                    : index === 2
+                      ? "reveal-delay-5"
+                      : "reveal-delay-6"
+              }`}
               key={step.title}
             >
               <span className="font-mono text-xs font-medium text-brand-700">

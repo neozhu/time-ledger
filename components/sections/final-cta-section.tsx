@@ -29,13 +29,13 @@ export function FinalCtaSection({
     <section className="section-space scroll-mt-24" id="final-cta">
       <Container>
         <div className="rounded-lg border border-slate-200 bg-white px-6 py-12 text-center md:px-14">
-          <h2 className="text-balance text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
+          <h2 className="reveal-item text-balance text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
             {title}
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-pretty text-base leading-7 text-slate-600 md:text-lg">
+          <p className="reveal-item reveal-delay-1 mx-auto mt-4 max-w-2xl text-pretty text-base leading-7 text-slate-600 md:text-lg">
             {description}
           </p>
-          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <div className="reveal-item reveal-delay-2 mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             {ctas.map((cta, index) => (
               <button
                 className={
@@ -50,7 +50,7 @@ export function FinalCtaSection({
             ))}
           </div>
           <div className="mt-10 grid gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,0.65fr)]">
-            <div className="rounded-md border border-slate-200 bg-slate-50 p-6 text-left">
+            <div className="reveal-item reveal-delay-3 rounded-md border border-slate-200 bg-slate-50 p-6 text-left">
               <p className="text-sm font-semibold text-slate-900">{contactTitle}</p>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {textContacts.map((contact) => (
@@ -84,7 +84,7 @@ export function FinalCtaSection({
               </ul>
             </div>
             {qrContact?.imageSrc ? (
-              <aside className="flex items-center justify-center p-2 lg:p-0">
+              <aside className="reveal-item reveal-delay-4 flex items-center justify-center p-2 lg:p-0">
                 <Image
                   alt={qrContact.label}
                   className="h-auto w-40 sm:w-48"
@@ -95,7 +95,7 @@ export function FinalCtaSection({
               </aside>
             ) : null}
           </div>
-          <div className="mt-6 overflow-hidden rounded-xl border border-slate-200 bg-white text-left">
+          <div className="reveal-item reveal-delay-5 mt-6 overflow-hidden rounded-xl border border-slate-200 bg-white text-left">
             <div className="grid md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
               <div className="bg-slate-50 p-5 md:p-6">
                 <p className="text-sm font-semibold text-slate-900">

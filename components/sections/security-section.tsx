@@ -24,7 +24,7 @@ export function SecuritySection({
       <Container>
         <SectionHeading eyebrow={eyebrow} title={title} description={description} />
         <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr]">
-          <div className="rounded-md border border-slate-200 bg-white p-6">
+          <div className="reveal-item reveal-delay-3 rounded-md border border-slate-200 bg-white p-6">
             <ul className="grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
               {badges.map((badge) => (
                 <li
@@ -37,9 +37,15 @@ export function SecuritySection({
             </ul>
           </div>
           <ul className="space-y-3">
-            {points.map((point) => (
+            {points.map((point, index) => (
               <li
-                className="rounded-md border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700"
+                className={`reveal-item rounded-md border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 ${
+                  index % 3 === 0
+                    ? "reveal-delay-3"
+                    : index % 3 === 1
+                      ? "reveal-delay-4"
+                      : "reveal-delay-5"
+                }`}
                 key={point}
               >
                 {point}

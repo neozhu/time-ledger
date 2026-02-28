@@ -31,9 +31,15 @@ export function ProductScreensSection({
       <Container>
         <SectionHeading eyebrow={eyebrow} title={title} description={description} />
         <div className="grid gap-4 lg:grid-cols-3">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <article
-              className="overflow-hidden rounded-md border border-slate-200 bg-white"
+              className={`reveal-item overflow-hidden rounded-md border border-slate-200 bg-white ${
+                index === 0
+                  ? "reveal-delay-3"
+                  : index === 1
+                    ? "reveal-delay-4"
+                    : "reveal-delay-5"
+              }`}
               key={item.title}
             >
               <div className="relative aspect-video w-full bg-slate-50">

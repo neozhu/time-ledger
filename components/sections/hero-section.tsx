@@ -37,17 +37,17 @@ export function HeroSection({
         className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/35 to-white/55"
       />
       <Container className="relative z-10">
-        <div className="animate-enter">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">
+        <div>
+          <p className="reveal-item text-xs font-semibold uppercase tracking-[0.18em] text-brand-700">
             {eyebrow}
           </p>
-          <h1 className="mt-4 max-w-4xl text-balance text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl md:text-5xl">
+          <h1 className="reveal-item reveal-delay-1 mt-4 max-w-4xl text-balance text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl md:text-5xl">
             {title}
           </h1>
-          <p className="mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 md:text-lg md:leading-8">
+          <p className="reveal-item reveal-delay-2 mt-5 max-w-2xl text-pretty text-base leading-7 text-slate-600 md:text-lg md:leading-8">
             {description}
           </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="reveal-item reveal-delay-3 mt-9 flex flex-col gap-3 sm:flex-row">
             {ctas.map((cta, index) => {
               const baseClass =
                 index === 0
@@ -76,9 +76,15 @@ export function HeroSection({
             })}
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            {stats.map((stat) => (
+            {stats.map((stat, index) => (
               <article
-                className="rounded-md border border-slate-200 bg-white p-5"
+                className={`reveal-item rounded-md border border-slate-200 bg-white p-5 ${
+                  index === 0
+                    ? "reveal-delay-3"
+                    : index === 1
+                      ? "reveal-delay-4"
+                      : "reveal-delay-5"
+                }`}
                 key={stat.label}
               >
                 <p className="font-mono text-2xl font-semibold text-brand-800">

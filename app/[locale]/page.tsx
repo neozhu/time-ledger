@@ -9,11 +9,32 @@ import { SecuritySection } from "@/components/sections/security-section";
 import { UseCasesSection } from "@/components/sections/use-cases-section";
 import { WorkflowSection } from "@/components/sections/workflow-section";
 import { Container } from "@/components/ui/container";
+import { Reveal } from "@/components/ui/reveal";
 import { Link } from "@/i18n/navigation";
 
 type LocalePageProps = {
   params: Promise<{ locale: "zh" | "en" }>;
 };
+
+function BrandIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={className}
+      fill="none"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g fill="#111111">
+        <rect height="3" rx="1.5" width="16" x="4" y="3" />
+        <rect height="17" rx="1.5" width="3" x="10" y="3" />
+        <rect height="3" rx="1.5" width="10" x="10" y="17" />
+      </g>
+    </svg>
+  );
+}
 
 export default async function LocaleLandingPage({ params }: LocalePageProps) {
   const { locale } = await params;
@@ -105,9 +126,17 @@ export default async function LocaleLandingPage({ params }: LocalePageProps) {
       </a>
       <header className="sticky top-0 z-20 border-b border-slate-200/80 bg-white/90 backdrop-blur">
         <Container className="py-3 md:flex md:h-16 md:items-center md:justify-between md:py-0">
-          <p className="text-sm font-semibold tracking-[0.1em] text-slate-900 uppercase md:flex-none">
-            {meta.siteName}
-          </p>
+          <Link
+            aria-label={meta.siteName}
+            className="group inline-flex items-center gap-2 md:flex-none"
+            href="/"
+            locale={locale}
+          >
+            <BrandIcon className="transition-transform duration-300 ease-out group-hover:-translate-y-0.5" />
+            <span className="text-sm font-semibold tracking-[0.1em] text-slate-900 uppercase transition-colors duration-300 group-hover:text-brand-800">
+              {meta.siteName}
+            </span>
+          </Link>
           <div className="mt-3 flex items-center gap-3 md:mt-0 md:min-w-0 md:flex-1 md:justify-end">
             <nav
               aria-label={meta.languageLabel}
@@ -119,7 +148,7 @@ export default async function LocaleLandingPage({ params }: LocalePageProps) {
 
                   return (
                     <a
-                      className="text-sm text-slate-600 transition-colors duration-200 hover:text-slate-900"
+                      className="inline-flex text-sm text-slate-600 transition-[color,transform] duration-200 hover:-translate-y-px hover:text-slate-900"
                       href={item.href}
                       key={item.href}
                       rel={isExternal ? "noopener noreferrer" : undefined}
@@ -132,7 +161,7 @@ export default async function LocaleLandingPage({ params }: LocalePageProps) {
               </div>
             </nav>
             <Link
-              className="shrink-0 rounded-md border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 transition-colors duration-200 hover:border-slate-400 hover:bg-slate-50"
+              className="shrink-0 rounded-md border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 shadow-sm transition-[background-color,border-color,transform,box-shadow] duration-200 hover:-translate-y-px hover:border-slate-400 hover:bg-slate-50 hover:shadow"
               href="/"
               locale={switchLocale}
             >
@@ -142,15 +171,33 @@ export default async function LocaleLandingPage({ params }: LocalePageProps) {
         </Container>
       </header>
 
-      <HeroSection {...hero} />
-      <PainPointsSection {...painPoints} />
-      <WorkflowSection {...workflow} />
-      <CapabilityMatrixSection {...capabilityMatrix} />
-      <UseCasesSection {...useCases} />
-      <ProductScreensSection {...screens} />
-      <SecuritySection {...security} />
-      <ReliabilitySection {...reliability} />
-      <FinalCtaSection {...finalCta} />
+      <Reveal delayMs={20} once={false}>
+        <HeroSection {...hero} />
+      </Reveal>
+      <Reveal delayMs={40} once={false}>
+        <PainPointsSection {...painPoints} />
+      </Reveal>
+      <Reveal delayMs={60} once={false}>
+        <WorkflowSection {...workflow} />
+      </Reveal>
+      <Reveal delayMs={80} once={false}>
+        <CapabilityMatrixSection {...capabilityMatrix} />
+      </Reveal>
+      <Reveal delayMs={100} once={false}>
+        <UseCasesSection {...useCases} />
+      </Reveal>
+      <Reveal delayMs={120} once={false}>
+        <ProductScreensSection {...screens} />
+      </Reveal>
+      <Reveal delayMs={140} once={false}>
+        <SecuritySection {...security} />
+      </Reveal>
+      <Reveal delayMs={160} once={false}>
+        <ReliabilitySection {...reliability} />
+      </Reveal>
+      <Reveal delayMs={180} once={false}>
+        <FinalCtaSection {...finalCta} />
+      </Reveal>
     </main>
   );
 }

@@ -22,9 +22,11 @@ export function ReliabilitySection({
       <Container>
         <SectionHeading eyebrow={eyebrow} title={title} description={description} />
         <ul className="grid gap-4 md:grid-cols-2">
-          {points.map((point) => (
+          {points.map((point, index) => (
             <li
-              className="rounded-md border border-slate-200 bg-white p-6 text-sm leading-6 text-slate-700"
+              className={`reveal-item rounded-md border border-slate-200 bg-white p-6 text-sm leading-6 text-slate-700 ${
+                index % 2 === 0 ? "reveal-delay-3" : "reveal-delay-4"
+              }`}
               key={point}
             >
               {point}

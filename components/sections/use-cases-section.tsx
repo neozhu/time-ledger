@@ -28,9 +28,11 @@ export function UseCasesSection({
       <Container>
         <SectionHeading eyebrow={eyebrow} title={title} description={description} />
         <div className="grid gap-4 lg:grid-cols-2">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <article
-              className="rounded-md border border-slate-200 bg-white p-6"
+              className={`reveal-item rounded-md border border-slate-200 bg-white p-6 ${
+                index === 0 ? "reveal-delay-3" : "reveal-delay-4"
+              }`}
               key={item.title}
             >
               <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>

@@ -33,7 +33,7 @@ export function CapabilityMatrixSection({
     >
       <Container>
         <SectionHeading eyebrow={eyebrow} title={title} description={description} />
-        <div className="overflow-x-auto rounded-md border border-slate-200 bg-white">
+        <div className="reveal-item reveal-delay-3 overflow-x-auto rounded-md border border-slate-200 bg-white">
           <table
             className="min-w-[640px] w-full border-collapse text-left"
             aria-label={ariaLabel}
