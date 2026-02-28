@@ -1,0 +1,210 @@
+{
+  "landing": {
+    "metadata": {
+      "title": "TimeLedger｜用数据驱动用工结算",
+      "description": "TimeLedger 工时云，面向劳务外包与制造企业的用工协同与工时结算平台，实现出勤、工时、对账、结算全流程闭环管理。",
+      "keywords": ["工时云", "用工结算", "劳务外包", "制造业工时管理", "企业级平台"]
+    },
+    "meta": {
+      "siteName": "TimeLedger",
+      "languageLabel": "语言切换",
+      "switchToZh": "切换到中文",
+      "switchToEn": "Switch to English",
+      "skipToMain": "跳转到主要内容"
+    },
+    "nav": {
+      "links": [
+        { "href": "#pain-points", "label": "行业痛点" },
+        { "href": "#workflow", "label": "解决方案" },
+        { "href": "#capability-matrix", "label": "平台能力" },
+        { "href": "#security", "label": "安全合规" },
+        { "href": "https://hrcloud.blazorserver.com/", "label": "演示地址" }
+      ]
+    },
+    "hero": {
+      "eyebrow": "企业级用工结算平台",
+      "title": "用数据驱动用工结算",
+      "description": "TimeLedger 工时云。面向劳务外包与制造企业的用工协同与工时结算平台，实现出勤、工时、对账、结算全流程闭环管理。",
+      "ctas": [
+        { "label": "申请产品演示", "href": "https://hrcloud.blazorserver.com/" },
+        {
+          "label": "获取解决方案",
+          "href": "https://github.com/neozhu/CleanArchitectureWithBlazorServer"
+        },
+        { "label": "立即体验", "href": "https://hrcloud.blazorserver.com/" }
+      ],
+      "stats": [
+        { "label": "出勤数据自动采集", "value": "01" },
+        { "label": "工时规则智能计算", "value": "02" },
+        { "label": "账单自动生成与审计追溯", "value": "03" }
+      ]
+    },
+    "painPoints": {
+      "eyebrow": "行业痛点",
+      "title": "传统用工管理，正在拖慢企业效率",
+      "description": "用工数据无法结构化管理，企业就无法规模化发展。",
+      "items": [
+        {
+          "title": "工时统计混乱",
+          "description": "人工汇总 Excel，误差高、效率低。"
+        },
+        {
+          "title": "对账周期长",
+          "description": "月末对账耗时，数据反复核对。"
+        },
+        {
+          "title": "多组织协作复杂",
+          "description": "甲方、劳务公司、HR 三方信息割裂。"
+        },
+        {
+          "title": "风险不可追溯",
+          "description": "缺乏审计日志，难以应对合规检查。"
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "解决方案",
+      "title": "TimeLedger 提供完整用工数据闭环",
+      "description": "出勤采集 → 工时计算 → 规则引擎 → 账单生成 → 审计归档",
+      "steps": [
+        {
+          "title": "出勤数据整合",
+          "detail": "支持多种考勤设备与系统对接，实时记录员工打卡数据。"
+        },
+        {
+          "title": "智能工时计算引擎",
+          "detail": "支持多班次规则，自动计算正常工时、加班、补贴。"
+        },
+        {
+          "title": "账单自动生成",
+          "detail": "基于实际工时生成月度结算单，支持多客户、多组织并行管理。"
+        },
+        {
+          "title": "全流程审计追溯",
+          "detail": "完整日志记录，支持导出与合规留存。"
+        }
+      ]
+    },
+    "capabilityMatrix": {
+      "eyebrow": "企业级表达",
+      "title": "企业级平台能力",
+      "description": "基于现代 Clean Architecture 构建，具备高可维护性与可扩展性。",
+      "ariaLabel": "企业级平台能力矩阵",
+      "headers": {
+        "module": "模块",
+        "capability": "能力"
+      },
+      "rows": [
+        { "module": "多组织架构", "capability": "支持多公司、多项目隔离" },
+        { "module": "权限体系", "capability": "精细化角色与数据访问控制" },
+        { "module": "数据隔离", "capability": "多租户架构" },
+        { "module": "实时协同", "capability": "SignalR 实时数据更新" },
+        { "module": "数据导出", "capability": "Excel 报表、账单导出" },
+        { "module": "日志体系", "capability": "操作审计与接口日志" },
+        { "module": "扩展能力", "capability": "支持二次开发与系统集成" }
+      ]
+    },
+    "useCases": {
+      "eyebrow": "典型使用场景",
+      "title": "适用行业与场景",
+      "description": "覆盖制造企业、劳务公司与项目型企业的核心用工结算场景。",
+      "items": [
+        {
+          "title": "制造企业",
+          "summary": "围绕产线与车间建立标准化用工数据体系。",
+          "bullets": ["外包员工管理", "车间用工统计", "项目制工时管理"]
+        },
+        {
+          "title": "劳务公司",
+          "summary": "提升客户结算效率与派遣管理透明度。",
+          "bullets": ["客户账单自动生成", "员工多项目派遣管理", "用工数据可视化分析"]
+        },
+        {
+          "title": "项目型企业",
+          "summary": "将工时直接映射到项目成本控制。",
+          "bullets": ["按工时结算项目成本", "多项目独立核算"]
+        }
+      ]
+    },
+    "screens": {
+      "eyebrow": "产品演示截图",
+      "title": "清晰的数据视图，让管理更透明",
+      "description": "关键模块界面可按企业实际流程进行配置。",
+      "placeholderLabel": "界面截图占位",
+      "items": [
+        {
+          "title": "仪表盘",
+          "caption": "关键运营指标与结算进度一屏可见。",
+          "imageSrc": "/images/screens/dashboard.png"
+        },
+        {
+          "title": "工时统计界面",
+          "caption": "多维度工时汇总、异常识别与修正。",
+          "imageSrc": "/images/screens/timesheet.png"
+        },
+        {
+          "title": "账单生成界面",
+          "caption": "自动生成结算账单并支持核验留痕。",
+          "imageSrc": "/images/screens/billingstatements.png"
+        },
+        {
+          "title": "多组织管理界面",
+          "caption": "统一管理多公司、多项目、多角色权限。",
+          "imageSrc": "/images/screens/organisation.png"
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "安全与合规",
+      "title": "企业级安全保障",
+      "description": "数据资产属于企业自身，平台仅提供能力支持。",
+      "badges": ["多租户隔离", "细粒度权限", "审计日志", "容灾支持"],
+      "points": [
+        "多租户隔离架构",
+        "细粒度权限控制",
+        "完整审计日志",
+        "数据备份与容灾支持",
+        "支持本地部署与私有云部署"
+      ]
+    },
+    "reliability": {
+      "eyebrow": "技术实力背书",
+      "title": "稳定可靠的技术架构",
+      "description": "技术表达以业务可靠性为核心，不堆叠术语。",
+      "points": [
+        "基于 .NET 现代架构体系",
+        "高性能 ORM 与缓存机制",
+        "支持大规模数据处理",
+        "容器化部署，支持私有化交付"
+      ]
+    },
+    "finalCta": {
+      "title": "开始构建属于您的用工数据体系",
+      "description": "从当前流程评估到分阶段落地，TimeLedger 提供可执行的产品与实施方案。",
+      "ctas": ["预约演示", "获取方案", "商务咨询"],
+      "contactTitle": "联系方式",
+      "contacts": [
+        {
+          "label": "企业邮箱",
+          "value": "neo.js.cn@gmail.com",
+          "href": "mailto:neo.js.cn@gmail.com"
+        },
+        {
+          "label": "微信二维码",
+          "value": "微信二维码",
+          "imageSrc": "/images/qr/weixin.jpg"
+        },
+        {
+          "label": "GitHub Profile",
+          "value": "https://github.com/neozhu",
+          "href": "https://github.com/neozhu"
+        }
+      ],
+      "positioning": {
+        "negativeTitle": "TimeLedger 不做：",
+        "negative": ["通用 HR SaaS", "人事管理系统", "招聘管理系统"],
+        "positive": "TimeLedger 专注于：以用工数据驱动的工时与结算管理平台"
+      }
+    }
+  }
+}

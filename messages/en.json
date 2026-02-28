@@ -1,0 +1,244 @@
+{
+  "landing": {
+    "metadata": {
+      "title": "TimeLedger | Data-Driven Workforce Settlement",
+      "description": "TimeLedger Workforce Time Cloud for labor outsourcing and manufacturing enterprises, covering attendance, work hours, reconciliation, and settlement in one closed loop.",
+      "keywords": [
+        "workforce settlement",
+        "time ledger",
+        "labor outsourcing",
+        "manufacturing operations",
+        "enterprise platform"
+      ]
+    },
+    "meta": {
+      "siteName": "TimeLedger",
+      "languageLabel": "Language switch",
+      "switchToZh": "切换到中文",
+      "switchToEn": "Switch to English",
+      "skipToMain": "Skip to Main Content"
+    },
+    "nav": {
+      "links": [
+        { "href": "#pain-points", "label": "Pain Points" },
+        { "href": "#workflow", "label": "Solution" },
+        { "href": "#capability-matrix", "label": "Capabilities" },
+        { "href": "#security", "label": "Security" },
+        { "href": "https://hrcloud.blazorserver.com/", "label": "Demo Site" }
+      ]
+    },
+    "hero": {
+      "eyebrow": "Enterprise Workforce Settlement Platform",
+      "title": "Use Data to Drive Workforce Settlement",
+      "description": "TimeLedger Workforce Time Cloud for labor outsourcing and manufacturing enterprises, enabling closed-loop management from attendance and work hours to reconciliation and settlement.",
+      "ctas": [
+        { "label": "Request Demo", "href": "https://hrcloud.blazorserver.com/" },
+        {
+          "label": "Get Solution",
+          "href": "https://github.com/neozhu/CleanArchitectureWithBlazorServer"
+        },
+        { "label": "Start Trial", "href": "https://hrcloud.blazorserver.com/" }
+      ],
+      "stats": [
+        { "label": "Automated attendance data capture", "value": "01" },
+        { "label": "Smart work-hour rule calculation", "value": "02" },
+        { "label": "Automated billing with audit trace", "value": "03" }
+      ]
+    },
+    "painPoints": {
+      "eyebrow": "Industry Pain Points",
+      "title": "Traditional workforce operations are slowing enterprises down",
+      "description": "Without structured workforce data management, scalable enterprise growth is not possible.",
+      "items": [
+        {
+          "title": "Chaotic work-hour statistics",
+          "description": "Manual Excel aggregation leads to low efficiency and high error rates."
+        },
+        {
+          "title": "Long reconciliation cycles",
+          "description": "Month-end reconciliation is time-consuming and repeatedly rechecked."
+        },
+        {
+          "title": "Complex multi-party collaboration",
+          "description": "Client, labor vendor, and HR data remain fragmented."
+        },
+        {
+          "title": "Untraceable risk",
+          "description": "Lack of audit logs makes compliance inspections difficult."
+        }
+      ]
+    },
+    "workflow": {
+      "eyebrow": "Solution",
+      "title": "TimeLedger delivers a full workforce data loop",
+      "description": "Attendance Capture → Time Calculation → Rule Engine → Billing → Audit Archive",
+      "steps": [
+        {
+          "title": "Attendance Data Integration",
+          "detail": "Connect to multiple attendance devices and systems with real-time punch data collection."
+        },
+        {
+          "title": "Intelligent Time Engine",
+          "detail": "Support multi-shift rules and automatically calculate regular hours, overtime, and allowances."
+        },
+        {
+          "title": "Automated Billing",
+          "detail": "Generate monthly settlement bills from actual hours for multi-client and multi-organization operations."
+        },
+        {
+          "title": "End-to-End Audit Trace",
+          "detail": "Keep complete logs with export and compliance retention support."
+        }
+      ]
+    },
+    "capabilityMatrix": {
+      "eyebrow": "Enterprise Capability",
+      "title": "Enterprise Platform Capabilities",
+      "description": "Built on modern clean architecture for maintainability and extensibility.",
+      "ariaLabel": "Enterprise capability matrix",
+      "headers": {
+        "module": "Module",
+        "capability": "Capability"
+      },
+      "rows": [
+        {
+          "module": "Multi-organization architecture",
+          "capability": "Isolation across companies and projects"
+        },
+        {
+          "module": "Permission system",
+          "capability": "Granular role and data access control"
+        },
+        { "module": "Data isolation", "capability": "Multi-tenant architecture" },
+        {
+          "module": "Real-time collaboration",
+          "capability": "SignalR-powered real-time updates"
+        },
+        { "module": "Data export", "capability": "Excel reports and billing exports" },
+        { "module": "Logging system", "capability": "Operation audit and API logs" },
+        {
+          "module": "Extensibility",
+          "capability": "Secondary development and system integration"
+        }
+      ]
+    },
+    "useCases": {
+      "eyebrow": "Use Cases",
+      "title": "Applicable industries and scenarios",
+      "description": "Designed for manufacturing, labor vendors, and project-based enterprises.",
+      "items": [
+        {
+          "title": "Manufacturing Enterprises",
+          "summary": "Build standardized workforce data operations around production and workshop execution.",
+          "bullets": [
+            "Outsourced worker management",
+            "Workshop labor statistics",
+            "Project-based time management"
+          ]
+        },
+        {
+          "title": "Labor Service Companies",
+          "summary": "Improve settlement efficiency and workforce assignment transparency.",
+          "bullets": [
+            "Automated client billing",
+            "Multi-project dispatch management",
+            "Workforce data visualization"
+          ]
+        },
+        {
+          "title": "Project-driven Enterprises",
+          "summary": "Map work hours directly to project cost governance.",
+          "bullets": [
+            "Settle project costs by labor hours",
+            "Independent accounting for multiple projects"
+          ]
+        }
+      ]
+    },
+    "screens": {
+      "eyebrow": "Product Screens",
+      "title": "Clear data views for transparent management",
+      "description": "Key module interfaces can be configured to your business workflow.",
+      "placeholderLabel": "Screen Placeholder",
+      "items": [
+        {
+          "title": "Dashboard",
+          "caption": "Track core operation metrics and settlement progress in one view.",
+          "imageSrc": "/images/screens/dashboard.png"
+        },
+        {
+          "title": "Work-hour Statistics",
+          "caption": "Aggregate by dimensions with anomaly detection and correction.",
+          "imageSrc": "/images/screens/timesheet.png"
+        },
+        {
+          "title": "Billing Generation",
+          "caption": "Auto-generate settlement bills with traceable verification.",
+          "imageSrc": "/images/screens/billingstatements.png"
+        },
+        {
+          "title": "Multi-organization Management",
+          "caption": "Manage multi-company and multi-project permissions centrally.",
+          "imageSrc": "/images/screens/organisation.png"
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Security and Compliance",
+      "title": "Enterprise-grade security assurance",
+      "description": "Data assets belong to the enterprise. The platform provides capability support only.",
+      "badges": [
+        "Multi-tenant Isolation",
+        "Granular Access",
+        "Audit Logs",
+        "Disaster Recovery"
+      ],
+      "points": [
+        "Multi-tenant isolation architecture",
+        "Fine-grained permission control",
+        "Complete audit logs",
+        "Data backup and disaster recovery support",
+        "On-premises and private cloud deployment support"
+      ]
+    },
+    "reliability": {
+      "eyebrow": "Technology Credibility",
+      "title": "Stable and reliable technical architecture",
+      "description": "Technology messaging is aligned with business reliability, not buzzwords.",
+      "points": [
+        "Built on modern .NET architecture",
+        "High-performance ORM and caching mechanisms",
+        "Support for large-scale data processing",
+        "Containerized deployment with private delivery options"
+      ]
+    },
+    "finalCta": {
+      "title": "Start building your workforce data system",
+      "description": "From process assessment to phased rollout, TimeLedger provides executable product and delivery plans.",
+      "ctas": ["Book a Demo", "Get the Plan", "Business Inquiry"],
+      "contactTitle": "Contact",
+      "contacts": [
+        {
+          "label": "Email",
+          "value": "neo.js.cn@gmail.com",
+          "href": "mailto:neo.js.cn@gmail.com"
+        },
+        {
+          "label": "WeChat QR",
+          "value": "WeChat QR",
+          "imageSrc": "/images/qr/weixin.jpg"
+        },
+        {
+          "label": "GitHub Profile",
+          "value": "https://github.com/neozhu",
+          "href": "https://github.com/neozhu"
+        }
+      ],
+      "positioning": {
+        "negativeTitle": "TimeLedger is not built for:",
+        "negative": ["Generic HR SaaS", "HR management systems", "Recruitment systems"],
+        "positive": "TimeLedger is built for: Workforce-data-driven time and settlement management."
+      }
+    }
+  }
+}
