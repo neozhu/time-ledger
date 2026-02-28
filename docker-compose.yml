@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: time-ledger
     ports:
-      - "3000:3000"
+      - "3030:3000"
     environment:
       NODE_ENV: production
       NEXT_PUBLIC_SITE_URL: https://timeledger.blazorserver.com

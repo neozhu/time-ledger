@@ -8,6 +8,14 @@ Production-ready bilingual marketing site for TimeLedger, built with:
 - next-intl
 - pnpm
 
+## What This Site Includes
+
+- Bilingual landing page (`zh` / `en`)
+- Sticky top navigation with brand icon
+- Scroll-triggered section reveal animations (with reduced-motion support)
+- Product screen showcase (including attendance device management)
+- SEO basics: sitemap, robots, OpenGraph, Twitter metadata
+
 ## Quick Start
 
 ```bash
@@ -21,9 +29,15 @@ Open `http://localhost:3000`.
 
 - Supported locales: `zh` and `en`
 - Default route: `/` redirects to `/zh`
-- All UI text and metadata live in:
+- Landing content, labels, and metadata live in:
   - `messages/zh.json`
   - `messages/en.json`
+
+### Content Update Tips
+
+- Pain points: `landing.painPoints.items`
+- Product screenshots: `landing.screens.items`
+- Reliability/tech credibility: `landing.reliability`
 
 ## Scripts
 
@@ -40,8 +54,14 @@ Open `http://localhost:3000`.
 app/[locale]
 components/sections
 components/ui
+public/images/screens
 messages/
 ```
+
+## Brand Assets
+
+- Favicon: `app/favicon.ico`
+- Landing brand icon: inline SVG in `app/[locale]/page.tsx`
 
 ## SEO
 
